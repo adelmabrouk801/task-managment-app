@@ -62,7 +62,13 @@ export const TaskProvider: React.FC<{ children: React.ReactNode }> = ({
   });
   const { toast } = useToast();
 
-  const assignees = ["John Doe", "Jane Smith", "Bob Johnson", "Alice Williams"];
+  const assignees = [
+    "Adel Elsayed Mabrouk",
+    "Ahmed Mohamed",
+    "Mohamed Ali",
+    "Ibarhim Mohammed",
+    "Ahmed Salem",
+  ];
 
   const addTask = useCallback(
     (task: Omit<Task, "id" | "completed">) => {
