@@ -41,8 +41,8 @@ const AddTask: React.FC = () => {
           title,
           description,
           assignee,
-          startDate: startDate ? startDate.toISOString() : undefined,
-          endDate: endDate ? endDate.toISOString() : undefined,
+          startDate: startDate ? startDate.toISOString() : "",
+          endDate: endDate ? endDate.toISOString() : "",
         });
         setTitle("");
         setDescription("");
