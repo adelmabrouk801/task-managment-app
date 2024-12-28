@@ -67,13 +67,13 @@ export const TaskProvider: React.FC<{ children: React.ReactNode }> = ({
   const addTask = useCallback(
     (task: Omit<Task, "id" | "completed">) => {
       try {
-        const newTask = {
+        const newTask: Task = {
           ...task,
           id: Date.now().toString(),
           completed: false,
           assignee: task.assignee === "unassigned" ? "" : task.assignee,
         };
-        setTasks((prevTasks) => [...prevTasks, newTask]);
+        setTasks((prevTasks) => [...prevTasks, newTask]); // Ensures `Task[]`
         toast({
           title: "Task added",
           description: "Your new task has been added successfully.",
@@ -93,10 +93,11 @@ export const TaskProvider: React.FC<{ children: React.ReactNode }> = ({
   const editTask = useCallback(
     (id: string, updatedTask: Partial<Task>) => {
       try {
-        setTasks((prevTasks) =>
-          prevTasks.map((task) =>
-            task.id === id ? { ...task, ...updatedTask } : task
-          )
+        setTasks(
+          (prevTasks) =>
+            prevTasks.map((task) =>
+              task.id === id ? { ...task, ...updatedTask } : task
+            ) // Ensures `Task[]`
         );
         toast({
           title: "Task updated",
@@ -117,7 +118,7 @@ export const TaskProvider: React.FC<{ children: React.ReactNode }> = ({
   const deleteTask = useCallback(
     (id: string) => {
       try {
-        setTasks((prevTasks) => prevTasks.filter((task) => task.id !== id));
+        setTasks((prevTasks) => prevTasks.filter((task) => task.id !== id)); // Ensures `Task[]`
         toast({
           title: "Task deleted",
           description: "The task has been successfully deleted.",
@@ -137,10 +138,11 @@ export const TaskProvider: React.FC<{ children: React.ReactNode }> = ({
   const toggleTask = useCallback(
     (id: string) => {
       try {
-        setTasks((prevTasks) =>
-          prevTasks.map((task) =>
-            task.id === id ? { ...task, completed: !task.completed } : task
-          )
+        setTasks(
+          (prevTasks) =>
+            prevTasks.map((task) =>
+              task.id === id ? { ...task, completed: !task.completed } : task
+            ) // Ensures `Task[]`
         );
       } catch (error) {
         console.error("Error toggling task:", error);
