@@ -7,6 +7,10 @@
 
 A modern, responsive Task Management Application built with Next.js, React, TypeScript, and Tailwind CSS. This application allows users to efficiently manage their tasks with features like task creation, editing, filtering, and more.
 
+## 🌐 Live Demo
+
+Check out the deployed application here: [Task Management App](https://task-managment-app-seven.vercel.app/)
+
 ## 🌟 Features
 
 - ✅ Create, edit, and delete tasks
@@ -37,7 +41,8 @@ A modern, responsive Task Management Application built with Next.js, React, Type
 ### Installation
 
 1. Clone the repository:
-   https://github.com/adelmabrouk801/task-managment-app
+   [GitHub Repository](https://github.com/adelmabrouk801/task-managment-app)
+
 2. Install dependencies:
 
 ````bash
@@ -46,7 +51,6 @@ npm install
 yarn install
 # or
 pnpm install
-```
 
 ## Getting Started
 
