@@ -1,4 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Task Management Application
+
+![Next.js](https://img.shields.io/badge/Next.js-13.0+-000000?style=for-the-badge&logo=next.js&logoColor=white)
+![React](https://img.shields.io/badge/React-18.0+-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-4.5+-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.0+-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+
+A modern, responsive Task Management Application built with Next.js, React, TypeScript, and Tailwind CSS. This application allows users to efficiently manage their tasks with features like task creation, editing, filtering, and more.
+
+## 🌟 Features
+
+- ✅ Create, edit, and delete tasks
+- 🔍 Filter tasks by status (All, Completed, Incomplete)
+- 👥 Assign tasks to team members
+- 📅 Set start and end dates for tasks
+- 🔄 Real-time updates with optimistic UI
+- 📱 Fully responsive design
+- 🌓 Light and dark mode support
+- 💾 Offline support with local storage
+
+## 🛠️ Technologies Used
+
+- [Next.js](https://nextjs.org/) - React framework for production
+- [React](https://reactjs.org/) - JavaScript library for building user interfaces
+- [TypeScript](https://www.typescriptlang.org/) - Typed superset of JavaScript
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [shadcn/ui](https://ui.shadcn.com/) - Re-usable components built with Radix UI and Tailwind CSS
+- [Lucide React](https://lucide.dev/) - Beautiful & consistent icon toolkit
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 14.0 or later
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+   https://github.com/adelmabrouk801/task-managment-app
+2. Install dependencies:
+
+````bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
 
 ## Getting Started
 
@@ -12,25 +60,8 @@ yarn dev
 pnpm dev
 # or
 bun dev
-```
+````
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
