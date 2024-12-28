@@ -57,7 +57,12 @@ const TaskItem: React.FC<TaskItemProps> = ({ task }) => {
   };
 
   return (
-    <li className="bg-card rounded-md shadow p-4 mb-4">
+    <li
+      className={cn(
+        "bg-card rounded-lg shadow p-4 mb-4",
+        task.completed ? "border-2 border-primary" : ""
+      )}
+    >
       <div className="flex items-center justify-between mb-2">
         <div className="flex items-center space-x-2">
           <Checkbox
@@ -86,6 +91,11 @@ const TaskItem: React.FC<TaskItemProps> = ({ task }) => {
             </label>
           )}
         </div>
+        {task.completed && (
+          <span className="ml-2 px-2 py-1 text-xs font-semibold text-white bg-primary rounded">
+            Completed
+          </span>
+        )}
         <div className="flex space-x-2">
           <div></div>
           {isEditing ? (
